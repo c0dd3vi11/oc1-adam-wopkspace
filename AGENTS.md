@@ -118,6 +118,12 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 
 Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, SSH details, voice preferences) in `TOOLS.md`.
 
+### Avatar sources (SVG)
+
+- Main account avatar (SwarmPrime): `avatars/swarmprime-avatar-v2.svg`
+- Bot avatar (SwarmPrime bot): `avatars/swarmprime-bot-avatar-v4.svg`
+- Prompt history: `docs/avatar-prompts.md`
+
 ### Локальный навык: Telegram через реального пользователя `Adam`
 
 - Описание: при необходимости можно использовать реальный Telegram-аккаунт `Adam` (через `q tg`/Telethon), если бот ограничен или нужен user-контекст.

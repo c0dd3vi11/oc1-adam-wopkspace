@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="72%">
+      <stop offset="0%" stop-color="#1a3a2f"/>
+      <stop offset="55%" stop-color="#0f261f"/>
+      <stop offset="100%" stop-color="#071611"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="38%">
+      <stop offset="0%" stop-color="#ffd27a" stop-opacity="0.98"/>
+      <stop offset="40%" stop-color="#49f2c2" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#49f2c2" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- aurora blobs -->
+  <g filter="url(#soft)" opacity="0.35">
+    <circle cx="320" cy="320" r="140" fill="#30d58d"/>
+    <circle cx="740" cy="360" r="130" fill="#2dc7ff"/>
+    <circle cx="640" cy="730" r="170" fill="#17a572"/>
+    <circle cx="360" cy="710" r="145" fill="#0f8f66"/>
+  </g>
+
+  <!-- rings -->
+  <g fill="none" stroke-linecap="round">
+    <circle cx="512" cy="512" r="244" stroke="#58f7cc" stroke-opacity="0.55" stroke-width="3"/>
+    <circle cx="512" cy="512" r="304" stroke="#34c9ff" stroke-opacity="0.38" stroke-width="2"/>
+    <circle cx="512" cy="512" r="362" stroke="#2fe3ad" stroke-opacity="0.28" stroke-width="2"/>
+  </g>
+
+  <!-- micro nodes -->
+  <g fill="#8effdc">
+    <circle cx="512" cy="214" r="10"/>
+    <circle cx="670" cy="264" r="9"/>
+    <circle cx="782" cy="386" r="10"/>
+    <circle cx="808" cy="550" r="9"/>
+    <circle cx="742" cy="698" r="10"/>
+    <circle cx="612" cy="790" r="9"/>
+    <circle cx="450" cy="812" r="10"/>
+    <circle cx="304" cy="752" r="9"/>
+    <circle cx="218" cy="624" r="10"/>
+    <circle cx="208" cy="468" r="9"/>
+    <circle cx="274" cy="320" r="10"/>
+    <circle cx="398" cy="236" r="9"/>
+  </g>
+
+  <!-- reconstruction shards -->
+  <g fill="#8bffe3" fill-opacity="0.2" stroke="#d7fff0" stroke-opacity="0.35" stroke-width="1.2">
+    <polygon points="184,520 202,505 210,530"/>
+    <polygon points="236,372 252,357 261,382"/>
+    <polygon points="362,246 378,232 388,256"/>
+    <polygon points="520,196 536,182 546,207"/>
+    <polygon points="680,236 697,222 706,247"/>
+    <polygon points="804,344 820,329 830,355"/>
+    <polygon points="842,502 860,488 868,513"/>
+    <polygon points="810,658 828,644 836,670"/>
+    <polygon points="694,774 710,760 720,784"/>
+    <polygon points="538,826 554,811 564,836"/>
+    <polygon points="382,802 398,788 408,812"/>
+    <polygon points="262,702 278,688 288,712"/>
+  </g>
+
+  <!-- core glow -->
+  <circle cx="512" cy="512" r="250" fill="url(#core)"/>
+
+  <!-- bot-friendly sigil (hex + dot + brackets) -->
+  <g transform="translate(512 512)">
+    <polygon points="0,-90 78,-45 78,45 0,90 -78,45 -78,-45" fill="#164738" fill-opacity="0.62" stroke="#a8ffe8" stroke-width="5"/>
+    <circle cx="0" cy="0" r="31" fill="#ffc66f" stroke="#fff0cf" stroke-width="3"/>
+    <path d="M-122 -8 L-88 -8 M-122 8 L-88 8" stroke="#7fffe0" stroke-width="5" stroke-linecap="round"/>
+    <path d="M122 -8 L88 -8 M122 8 L88 8" stroke="#7fffe0" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="-116" x2="0" y2="-146" stroke="#7fffe0" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- vignette -->
+  <rect width="1024" height="1024" fill="none" stroke="#000" stroke-opacity="0.28" stroke-width="40"/>
+</svg>
