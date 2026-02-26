@@ -1,0 +1,26 @@
+# Workspace backup policy: whitelist mode
+# Ignore everything by default
+*
+
+# Keep git internals
+!.gitignore
+!.git/
+
+# Keep core identity/context files
+!AGENTS.md
+!SOUL.md
+!USER.md
+!IDENTITY.md
+!TOOLS.md
+!HEARTBEAT.md
+!WORKSPACE_DATA_CLASSIFICATION.md
+
+# Keep knowledge/docs
+!memory/
+!memory/**
+!docs/
+!docs/**
+
+# If a file is valuable for backup but currently ignored,
+# add an explicit exception here like:
+# !reports/important-report-2026-02-26.md

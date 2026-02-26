@@ -243,6 +243,12 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
+## Workspace Backup Policy (Git)
+
+- This workspace repo uses **whitelist mode** in `.gitignore` (everything ignored by default, only approved files tracked).
+- If some new file/folder here turns out to be valuable for backup, add an explicit allow-rule to `.gitignore` (example: `!path/to/file.md`).
+- After adding the exception, commit both the file and `.gitignore` change together.
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
