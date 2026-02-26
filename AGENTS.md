@@ -121,8 +121,8 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 ### Avatar sources (SVG)
 
 - Main account avatar (SwarmPrime): `avatars/swarmprime-avatar-v2.svg`
-- Bot avatar (SwarmPrime bot): `avatars/swarmprime-bot-avatar-v4.svg`
-- Prompt history: `docs/avatar-prompts.md`
+- Bot avatar (SwarmPrime bot): `avatars/swarmprime-bot-avatar-v5-red.svg`
+- Avatar specs, prompts, and history: `avatars/AGENTS.md`
 
 ### Локальный навык: Telegram через реального пользователя `Adam`
 

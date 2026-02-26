@@ -18,12 +18,15 @@
 # Keep knowledge/docs
 !memory/
 !memory/**
+!memories/
+!memories/**
 !docs/
 !docs/**
 !skills/
 !skills/**
 !avatars/
 !avatars/*.svg
+!avatars/AGENTS.md
 
 # If a file is valuable for backup but currently ignored,
 # add an explicit exception here like:
