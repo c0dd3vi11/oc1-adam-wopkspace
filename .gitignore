@@ -22,6 +22,8 @@
 !docs/**
 !skills/
 !skills/**
+!avatars/
+!avatars/*.svg
 
 # If a file is valuable for backup but currently ignored,
 # add an explicit exception here like:

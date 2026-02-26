@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="bg" cx="48%" cy="42%" r="72%">
+      <stop offset="0%" stop-color="#25305e"/>
+      <stop offset="55%" stop-color="#151d3f"/>
+      <stop offset="100%" stop-color="#0a1026"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+    <radialGradient id="halo" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#ffd9a5" stop-opacity="0.7"/>
+      <stop offset="45%" stop-color="#79ebff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#79ebff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <g opacity="0.28" filter="url(#soft)">
+    <circle cx="320" cy="300" r="130" fill="#7b6dff"/>
+    <circle cx="700" cy="320" r="120" fill="#39d9ff"/>
+    <circle cx="680" cy="710" r="150" fill="#58b8ff"/>
+    <circle cx="350" cy="730" r="130" fill="#8a62ff"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round">
+    <circle cx="512" cy="512" r="240" stroke="#7beeff" stroke-opacity="0.42" stroke-width="3"/>
+    <circle cx="512" cy="512" r="308" stroke="#9877ff" stroke-opacity="0.28" stroke-width="2"/>
+  </g>
+
+  <circle cx="512" cy="512" r="250" fill="url(#halo)"/>
+
+  <!-- softer reconstruction motifs -->
+  <g fill="#8ff2ff" fill-opacity="0.22" stroke="#baf8ff" stroke-opacity="0.35" stroke-width="1.2">
+    <polygon points="200,520 218,506 225,531"/>
+    <polygon points="250,370 268,356 275,380"/>
+    <polygon points="370,250 388,236 395,260"/>
+    <polygon points="520,200 537,186 546,211"/>
+    <polygon points="675,235 693,222 700,246"/>
+    <polygon points="790,340 808,326 816,351"/>
+    <polygon points="828,500 846,486 854,511"/>
+    <polygon points="800,660 818,646 826,670"/>
+    <polygon points="690,770 708,756 716,780"/>
+    <polygon points="540,820 558,806 566,831"/>
+    <polygon points="390,800 408,786 416,810"/>
+    <polygon points="270,700 288,686 296,710"/>
+  </g>
+
+  <!-- Friendly prime sigil -->
+  <g transform="translate(512 512)">
+    <polygon points="0,-86 74,-43 74,43 0,86 -74,43 -74,-43" fill="#244774" fill-opacity="0.6" stroke="#baf8ff" stroke-width="5"/>
+    <circle cx="0" cy="0" r="32" fill="#ffcb84" stroke="#fff1d3" stroke-width="3"/>
+    <circle cx="0" cy="0" r="58" fill="none" stroke="#89efff" stroke-opacity="0.6" stroke-width="2"/>
+  </g>
+
+  <g fill="#9ef6ff">
+    <circle cx="512" cy="222" r="10"/><circle cx="666" cy="270" r="8"/><circle cx="768" cy="381" r="9"/>
+    <circle cx="789" cy="530" r="8"/><circle cx="732" cy="668" r="9"/><circle cx="620" cy="756" r="8"/>
+    <circle cx="476" cy="790" r="9"/><circle cx="338" cy="748" r="8"/><circle cx="247" cy="636" r="9"/>
+    <circle cx="232" cy="489" r="8"/><circle cx="276" cy="352" r="9"/><circle cx="382" cy="259" r="8"/>
+  </g>
+
+  <rect width="1024" height="1024" fill="none" stroke="#000" stroke-opacity="0.22" stroke-width="36"/>
+</svg>
