@@ -20,6 +20,8 @@
 !memory/**
 !docs/
 !docs/**
+!skills/
+!skills/**
 
 # If a file is valuable for backup but currently ignored,
 # add an explicit exception here like:
