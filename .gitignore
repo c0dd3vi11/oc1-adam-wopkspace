@@ -29,6 +29,10 @@
 !avatars/*.svg
 !avatars/AGENTS.md
 
+# q-step scripts/checkpoints
+!steps/
+!steps/**
+
 # If a file is valuable for backup but currently ignored,
 # add an explicit exception here like:
 # !reports/important-report-2026-02-26.md
