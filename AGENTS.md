@@ -168,6 +168,17 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 2. Выполнять процесс строго через `q`-команды из документа.
 3. По завершению формировать и отправлять пользователю красивый HTML-отчёт (в дополнение к SQLite/MD).
 
+### Навык: «TG Postgres Research» / «сохрани тг в postgres»
+
+Триггеры: «сохрани канал/группу Telegram целиком в PostgreSQL», «докачивай новые сообщения», «проанализируй Telegram и сделай отчёт», а также любые сообщения с `t.me/...` ссылками (даже без точных инструкций).
+
+Обязательное действие:
+1. Прочитать: `/home/adam/.openclaw/workspace/skills/tg-postgres-research/SKILL.md`.
+2. Запускать синк через `q`-команду `tg-text-sync-pg` (text-only по умолчанию).
+3. Поддерживать: один источник, несколько источников, и точечные ссылки на сообщения.
+4. Медиа подключать только при явной просьбе пользователя.
+5. Формировать итог в одном `.md` + отправлять красивый `.html`.
+
 **🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summaries, and "storytime" moments! Way more engaging than walls of text. Surprise people with funny voices.
 
 **📝 Platform Formatting:**
