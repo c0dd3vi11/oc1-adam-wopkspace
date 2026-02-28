@@ -171,6 +171,45 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 4. Медиа подключать только при явной просьбе пользователя.
 5. Формировать итог в одном `.md` + отправлять красивый `.html`.
 
+### Навык: «Media CLI» / «обрежь видео» / «скачай YouTube»
+
+Триггеры: просьбы скачать видео/аудио, обрезать/склеить/перекодировать ролик, убрать полосы, подготовить файл для Telegram.
+
+Обязательное действие:
+1. Прочитать: `/home/adam/.openclaw/workspace/skills/media-cli/SKILL.md`.
+2. Использовать локальные бинарники из `/home/adam/.openclaw/workspace/bin`:
+   - `yt-dlp`
+   - `ffmpeg`
+   - `ffprobe`
+3. Разрешается обновлять/заменять эти бинарники при необходимости.
+
+### Навык: «QTG» / Telegram через реального пользователя Adam
+
+Триггеры: когда Bot API ограничен, у бота нет нужных прав, требуется user-контекст Telegram, или различается поведение entity/edit между ботом и user API.
+
+Обязательное действие:
+1. Прочитать: `/home/adam/.openclaw/workspace/skills/qtg/SKILL.md`.
+2. Использовать `q tg` (Telethon-daemon) как fallback после bot-пути.
+3. Делать пост-проверку результата чтением сообщения/чата.
+
+### Навык: «PostgreSQL» / структурированные данные
+
+Триггеры: нужно хранить, загружать, агрегировать и запрашивать структурированные данные (временно или долгосрочно), получать SQL-срезы/отчёты.
+
+Обязательное действие:
+1. Прочитать: `/home/adam/.openclaw/workspace/skills/postgresql/SKILL.md`.
+2. Для обычных SQL-задач использовать non-sudo доступ (`tony_admin`).
+3. Перед destructive SQL спрашивать подтверждение.
+
+### Навык: «q-tools» / упаковка логики в переиспользуемые алгоритмы
+
+Триггеры: задачу нужно стандартизировать, заскриптовать и переиспользовать (одиночно или как часть большего конвейера).
+
+Обязательное действие:
+1. Прочитать: `/home/adam/.openclaw/workspace/skills/q-tools/SKILL.md`.
+2. Сначала искать готовую команду `q`, потом расширять/добавлять скрипт при необходимости.
+3. Следовать правилам репозитория `/home/adam/dev/tools/q-tools/AGENTS.md`.
+
 **🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summaries, and "storytime" moments! Way more engaging than walls of text. Surprise people with funny voices.
 
 **📝 Platform Formatting:**
@@ -178,6 +217,7 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 - **Discord/WhatsApp:** No markdown tables! Use bullet lists instead
 - **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://example.com>`
 - **WhatsApp:** No headers — use **bold** or CAPS for emphasis
+- **Telegram (important):** When sending via `q tg`/raw JSON, never send literal `\\n` in text. Use real newline characters (actual line breaks), otherwise users will see `\n` in message body.
 
 ## 💓 Heartbeats - Be Proactive!
 
