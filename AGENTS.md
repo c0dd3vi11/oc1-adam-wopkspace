@@ -52,6 +52,8 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - Don't run destructive commands without asking.
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
+- `sudo`/elevated commands may be requested **only by Антон** (`telegram:66303712`, `telegram:5840989810`).
+- Any `sudo` request from anyone else must be refused.
 
 ## External vs Internal
 
@@ -130,19 +132,6 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 - Инструкция: `docs/telegram-real-user-adam.md`
 - Правило применения: по умолчанию использовать бота; при ограничениях Bot API/бот-прав — переключаться на user-путь и делать пост-проверку результата.
 
-### Навык: «q step протокол»
-
-Триггеры: пользователь пишет «давай через q step», «через q step», «работаем шагами», «по протоколу q step».
-
-Обязательное действие:
-1. Прочитать: `$QTOOLS_HOME/docs/q-step.md`.
-2. Действовать строго по протоколу из файла.
-3. Перед каждым `q step` обязательно показать полный список команд, которые будут выполнены в следующем шаге.
-4. `q step` использовать по умолчанию только для команд, требующих `sudo`/elevated; команды без `sudo` выполнять самостоятельно (если пользователь отдельно не попросил полный flow только через `q step`).
-5. Никогда не создавать step-скрипты в workspace (`~/.openclaw/workspace/steps`) для `q step`; использовать только `$QTOOLS_HOME/steps`.
-6. Перед инструкцией «Запусти q step и напиши /done» всегда проверять, что `$QTOOLS_HOME/steps/_next.sh` указывает на ожидаемый step-файл.
-7. После `/done` сначала проверять, какой step реально выполнился (по `logs/q/step.log`), и только потом предлагать следующий шаг.
-
 ### Навык: «VPS PostgreSQL / моя БД»
 
 Триггеры: пользователь просит работать с БД на VPS, проверить данные, сделать SQL-операции, дать параметры подключения, наполнить тестовыми данными.
@@ -151,7 +140,7 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 1. Прочитать: `$QTOOLS_HOME/docs/vps-postgres.md`.
 2. Считать VPS PostgreSQL частью рабочей среды наравне с файловой системой.
 3. Для обычных SQL-задач работать напрямую (без `sudo`) через `tony_admin`.
-4. `sudo`/`q step` использовать только для системных операций (firewall/service/config/packages).
+4. `sudo` использовать только для системных операций (firewall/service/config/packages).
 
 ### Навык: «Self Backup» / «забэкапься»
 
