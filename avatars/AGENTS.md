@@ -6,6 +6,7 @@
 
 - **Основной аккаунт (SwarmPrime):** `swarmprime-avatar-v2.svg`
 - **Бот (SwarmPrime bot):** `swarmprime-bot-avatar-v5-red.svg`
+- **Бот @jamwebniadamszvzbot (web auth, `dev/tools/web-adam`):** `swarmprime-bot-avatar-v4.svg`
 
 ## История версий
 
