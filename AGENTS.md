@@ -210,6 +210,15 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 2. Сначала искать готовую команду `q`, потом расширять/добавлять скрипт при необходимости.
 3. Следовать правилам репозитория `/home/adam/dev/tools/q-tools/AGENTS.md`.
 
+### Навык: «webserver projects» / web-adam / webserver
+
+Триггеры: пользователь пишет про «webserver», «web-adam», просит добавить/изменить проект на сайте, найти существующий веб-проект, проверить деплой/доступность веб-ресурса.
+
+Обязательное действие:
+1. Прочитать: `/home/adam/.openclaw/workspace/skills/webserver-projects/SKILL.md`.
+2. Работать с проектом в `/home/adam/dev/tools/www-adam` через `WEBADAM_HOME`.
+3. Перед завершением прогонять `uv run pytest` + `uv run ruff check .` и делать runtime-проверку сервиса (`webadam`/`caddy`).
+
 **🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summaries, and "storytime" moments! Way more engaging than walls of text. Surprise people with funny voices.
 
 **📝 Platform Formatting:**
