@@ -54,6 +54,16 @@
 - Avatar prompt history saved in:
   - `docs/avatar-prompts.md`
 
+## 2026-02-27 — Cursor Ultra integration approach (planned)
+
+- For using Cursor Ultra without OpenClaw core patches, preferred pattern is a local OpenAI-compatible shim on `127.0.0.1` (`/v1`) that translates requests to `cursor-agent` and maps responses back.
+- Role boundary fixed: Cursor stays "brain-only" (analysis/planning), while all real actions (tools, shell, credentials) remain in OpenClaw.
+- Security baseline for any implementation:
+  - never pass OpenClaw secrets/credential env to Cursor process;
+  - run with constrained environment/workdir;
+  - avoid autonomous shell/write execution by Cursor.
+- Next implementation step: prepare a minimal secure launch template + explicit shim contract (request/response/errors/timeouts).
+
 ## Research stream note
 
 - `memory/ai-crypto-research.md` is a large tactical research log (12-run scan cycle) on AI+crypto income channels.
