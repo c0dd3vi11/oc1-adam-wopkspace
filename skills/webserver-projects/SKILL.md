@@ -29,7 +29,10 @@ Manage the web hub as a product surface, not just files: detect what already exi
    - `uv run pytest`
    - `uv run ruff check .`
    - `sudo systemctl restart webadam`
-4. Verify runtime:
+4. Commit + push (mandatory after every completed change set):
+   - `git add -A && git commit -m "..."`
+   - `git push`
+5. Verify runtime:
    - `sudo systemctl is-active webadam caddy`
    - `curl -I https://185.28.175.67.sslip.io/`
 
