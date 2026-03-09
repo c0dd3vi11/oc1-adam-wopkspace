@@ -15,6 +15,7 @@ Before doing anything else:
 3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
 4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 5. Read `$QTOOLS_HOME/AGENTS.md` for tooling workflow rules. If `QTOOLS_HOME` is unset, ask admin to configure it in `~/.bashrc`.
+6. When you enter any subproject repo (e.g. `www-adam`, `q-tools`), read that repo's local `AGENTS.md` before coding and follow its mandatory checklists.
 
 Don't ask permission. Just do it.
 
