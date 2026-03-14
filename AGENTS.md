@@ -133,6 +133,16 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 - Инструкция: `docs/telegram-real-user-adam.md`
 - Правило применения: по умолчанию использовать бота; при ограничениях Bot API/бот-прав — переключаться на user-путь и делать пост-проверку результата.
 
+### Навык: «MSK1 VPS root / 3x-ui»
+
+Триггеры: «подключись к msk1», «проверь msk1», «сделай что-то на msk1 по ssh», «проверь/настрой 3x-ui на msk1».
+
+Обязательное действие:
+1. Подключаться по алиасу `msk1` (см. `~/.ssh/config`), user `root`, key `~/.ssh/msk1_ed25519`.
+2. Перед изменениями проверять доступ/контекст командой вида `ssh msk1 'hostname && id -un'`.
+3. Учитывать, что на сервере установлен `3x-ui`.
+4. Перед потенциально destructive изменениями спрашивать подтверждение владельца.
+
 ### Навык: «VPS PostgreSQL / моя БД»
 
 Триггеры: пользователь просит работать с БД на VPS, проверить данные, сделать SQL-операции, дать параметры подключения, наполнить тестовыми данными.
@@ -325,6 +335,22 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 - This workspace repo uses **whitelist mode** in `.gitignore` (everything ignored by default, only approved files tracked).
 - If some new file/folder here turns out to be valuable for backup, add an explicit allow-rule to `.gitignore` (example: `!path/to/file.md`).
 - After adding the exception, commit both the file and `.gitignore` change together.
+
+## Local network labels
+
+### Список IP: «Мои VPS»
+
+Использовать как единый whitelist-набор:
+
+- `80.66.87.163` (DE / Frankfurt)
+- `80.249.151.50` (RU / Moscow)
+- `150.241.122.203` (US / Dallas)
+- `185.28.175.67` (текущий сервер / this host)
+
+### SSH (актуально)
+
+- SSH daemon port: `18754` (вместо `22`)
+- Проверка: `ss -ltnp | grep 18754` и `sshd -T | grep '^port '`
 
 ## Make It Yours
 
